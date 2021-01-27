@@ -48,7 +48,7 @@ class App extends React.Component {
   const classes = data ? data.filter((element)=>{
     if(search === null){
          return element;
-    }else if(element.class ==search ||element.subject.toLowerCase().includes(search.toLowerCase())){
+    }else if(element.class.toString().toLowerCase().includes(search.toLowerCase()) ||element.subject.toLowerCase().includes(search.toLowerCase())){
          return element;
     }
   }):null;
