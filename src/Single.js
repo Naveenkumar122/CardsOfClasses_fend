@@ -30,10 +30,10 @@ function Single() {
            {data &&
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-2 d-flex justify-content-center">
+                        <div className="col-4 d-flex justify-content-center">
                             <img className="img-fluid" src={data.image} alt="..." />
                         </div>
-                        <div className="col-10">
+                        <div className="col-8">
                             <div className="row-4">
                                 <p>Class:<strong>{data.class}</strong></p>
                                 <p>Subject:<strong>{data.subject}</strong></p>
