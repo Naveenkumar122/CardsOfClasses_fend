@@ -31,9 +31,9 @@ function Single() {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2 d-flex justify-content-center">
-                            <img src={data.image} alt="..." />
+                            <img className="img-fluid" src={data.image} alt="..." />
                         </div>
-                        <div className="col-8">
+                        <div className="col-10">
                             <div className="row-4">
                                 <p>Class:<strong>{data.class}</strong></p>
                                 <p>Subject:<strong>{data.subject}</strong></p>
@@ -43,7 +43,7 @@ function Single() {
                                 <p>Topics:</p>
                                 <ul>{data.topics.map((ele, index) => <li key={index}>{ele}</li>)}</ul>
                             </div>
-                            </div>
+                        </div>
                             <p><strong>Description:</strong><br/>{data.description}</p>
                             <Link to={'/'}><button className="btn btn-danger">Back</button></Link>
                     </div>
